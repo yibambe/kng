@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1E830898-5A5E-45D7-B2AE-E34A36343395}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{64C553E9-14EE-4433-B109-64C2D5C97645}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5ervice", "5ervice", "{6ACF222E-EFC1-489B-8928-9DEE3FD6094F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E830898-5A5E-45D7-B2AE-E34A36343395} = {6ACF222E-EFC1-489B-8928-9DEE3FD6094F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AAF791B-E921-47BC-94FC-4F63ABDA7D3D}
+	EndGlobalSection
+EndGlobal

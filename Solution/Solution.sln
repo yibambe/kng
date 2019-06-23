@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5ervice", "5ervice", "{6ACF222E-EFC1-489B-8928-9DEE3FD6094F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance.DatabaseContext", "Persistance.DatabaseContext\Persistance.DatabaseContext.csproj", "{56C94582-E6EF-4017-A76F-27AD73BF73A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E830898-5A5E-45D7-B2AE-E34A36343395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C94582-E6EF-4017-A76F-27AD73BF73A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C94582-E6EF-4017-A76F-27AD73BF73A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C94582-E6EF-4017-A76F-27AD73BF73A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C94582-E6EF-4017-A76F-27AD73BF73A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1E830898-5A5E-45D7-B2AE-E34A36343395} = {6ACF222E-EFC1-489B-8928-9DEE3FD6094F}
+		{56C94582-E6EF-4017-A76F-27AD73BF73A3} = {64C553E9-14EE-4433-B109-64C2D5C97645}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AAF791B-E921-47BC-94FC-4F63ABDA7D3D}

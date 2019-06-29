@@ -4,11 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using DTO;
 namespace Service.Controllers
 {
     public class UsuarioController : ApiController
     {
+        public  MyProperty { get; set; }
         // GET: api/Usuario
         public IEnumerable<string> Get()
         {

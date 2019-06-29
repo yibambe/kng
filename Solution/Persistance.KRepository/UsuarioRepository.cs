@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Persistance.DatabaseContext;
+﻿using Persistance.DatabaseContext;
+using System;
 using System.Linq;
 namespace Persistance.KRepository
 {

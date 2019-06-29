@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using NLog;
+using System.Threading.Tasks;
 using Persistance.DatabaseContext;
 using System.Linq;
-
-namespace Persistance.Repository
+namespace Persistance.KRepository
 {
     public interface IUsuario
     {
@@ -17,12 +17,12 @@ namespace Persistance.Repository
 
         public Usuario GetById(Usuario usuario)
         {
-            Usuario usuarioResponse=new Usuario(); 
+            Usuario usuarioResponse = new Usuario();
             try
             {
                 using (KonexusModel context = new KonexusModel())
                 {
-                   usuarioResponse = context.Usuarios.Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault<Usuario>();
+                    usuarioResponse = context.Usuarios.Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault<Usuario>();
                 }
             }
             catch (Exception ex)

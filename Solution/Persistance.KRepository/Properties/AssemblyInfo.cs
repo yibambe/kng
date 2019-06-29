@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Persistance.Repository")]
+[assembly: AssemblyTitle("Persistance.KRepository")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Persistance.Repository")]
+[assembly: AssemblyProduct("Persistance.KRepository")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6822afd6-0df7-47ac-8785-9ff92c1b9b91")]
+[assembly: Guid("4cf3458f-9ce1-4055-a36f-423b1299e2dd")]
 
 // Version information for an assembly consists of the following four values:
 //

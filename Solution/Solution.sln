@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance.DatabaseContext
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance.KRepository", "Persistance.KRepository\Persistance.KRepository.csproj", "{4CF3458F-9CE1-4055-A36F-423B1299E2DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.DTO", "Common.DTO\Common.DTO.csproj", "{B482F559-4ED0-40EF-B0E9-FF1704CE045D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{93E7828B-828E-4F68-AFEB-1D5C8B811F4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{4CF3458F-9CE1-4055-A36F-423B1299E2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF3458F-9CE1-4055-A36F-423B1299E2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF3458F-9CE1-4055-A36F-423B1299E2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B482F559-4ED0-40EF-B0E9-FF1704CE045D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B482F559-4ED0-40EF-B0E9-FF1704CE045D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B482F559-4ED0-40EF-B0E9-FF1704CE045D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B482F559-4ED0-40EF-B0E9-FF1704CE045D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +47,7 @@ Global
 		{1E830898-5A5E-45D7-B2AE-E34A36343395} = {6ACF222E-EFC1-489B-8928-9DEE3FD6094F}
 		{56C94582-E6EF-4017-A76F-27AD73BF73A3} = {64C553E9-14EE-4433-B109-64C2D5C97645}
 		{4CF3458F-9CE1-4055-A36F-423B1299E2DD} = {64C553E9-14EE-4433-B109-64C2D5C97645}
+		{B482F559-4ED0-40EF-B0E9-FF1704CE045D} = {93E7828B-828E-4F68-AFEB-1D5C8B811F4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AAF791B-E921-47BC-94FC-4F63ABDA7D3D}

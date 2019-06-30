@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Common.DTO
 {
-    public class Class1
+    public class UsuarioDTO
     {
+        public int PersonNumber{ get; set; }
+        public string Password { get; set; }
     }
 }

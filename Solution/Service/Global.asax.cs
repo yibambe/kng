@@ -13,6 +13,7 @@ namespace Service
     {
         protected void Application_Start()
         {
+            AutoMapperConfig.Initialize();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             UnityConfig.RegisterComponents();                           // <----- Add this line

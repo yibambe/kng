@@ -18,12 +18,12 @@ namespace Persistance.KRepository
             {
                 using (KonexusModel context = new KonexusModel())
                 {
-                    usuarioResponse = context.Usuarios.Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault<Usuario>();
+                    usuarioResponse = context.Usuarios.Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault();
                 }
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, " 3rr0r");
+                Logger.Error(ex.Message, " 3rr0r");
             }
             return usuarioResponse;
         }

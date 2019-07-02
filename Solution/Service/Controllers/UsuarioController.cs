@@ -7,19 +7,26 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Common.DTO;
-
+using Persistance.KRepository;
+using Persistance.DatabaseContext;
+using AutoMapper;
 namespace Service.Controllers
 {
     public class UsuarioController : ApiController
     {
-        //public  MyProperty { get; set; }
+        private IUsuario _usuario;
+        public UsuarioController(IUsuario usuario)
+        {
+            _usuario = usuario;
+        }
 
         [HttpPost]
         ///[ResponseType(typeof(UsuarioDTO))]
         [Route("api/usuario/login")]
         public IHttpActionResult Login([FromBody] UsuarioDTO usuarioDTO)
         {
-            //return null;
+            Usuario tmpUsuario = Mapper.Map<Usuario>(usuarioDTO);
+            _usuario.GetById(tmpUsuario);
             return Ok("test");
         }
         //public UsuarioDTO Login(UsuarioDTO usuarioDTO)

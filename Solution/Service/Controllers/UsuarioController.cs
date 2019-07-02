@@ -15,10 +15,11 @@ namespace Service.Controllers
         //public  MyProperty { get; set; }
 
         [HttpPost]
-        [ResponseType(typeof(UsuarioDTO))]
-        [Route("login")]
+        ///[ResponseType(typeof(UsuarioDTO))]
+        [Route("api/usuario/login")]
         public IHttpActionResult Login([FromBody] UsuarioDTO usuarioDTO)
         {
+            //return null;
             return Ok("test");
         }
         //public UsuarioDTO Login(UsuarioDTO usuarioDTO)

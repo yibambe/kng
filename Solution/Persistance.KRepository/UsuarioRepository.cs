@@ -7,7 +7,7 @@ namespace Persistance.KRepository
     {
         Usuario GetById(Usuario usuario);
     }
-    class UsuarioRepository : IUsuario
+    public class UsuarioRepository : IUsuario
     {
         private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 

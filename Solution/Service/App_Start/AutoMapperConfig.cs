@@ -16,7 +16,8 @@ namespace Service
             {
                 cfg.CreateMap<UsuarioDTO, Usuario>()
                 .ForMember(y => y.Numero_persona, x=> x.MapFrom( src => src.PersonNumber))
-                .ForMember(y=> y.Contraseña , x=> x.MapFrom( src => src.Password));
+                .ForMember(y=> y.Contraseña , x=> x.MapFrom( src => src.Password))
+                .ForMember(y => y.Estatus, x => x.MapFrom(src => src.Status)).ReverseMap();
             });
 
             //Mapper.Initialize((config) =>

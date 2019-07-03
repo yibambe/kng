@@ -23,7 +23,8 @@ namespace Persistance.KRepository
             }
             catch (Exception ex)
             {
-                Logger.Error(ex.Message, " 3rr0r");
+                Logger.Error(ex.Message);
+                Logger.Error(ex.InnerException.Message);
             }
             return usuarioResponse;
         }

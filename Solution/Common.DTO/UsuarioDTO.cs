@@ -10,5 +10,6 @@ namespace Common.DTO
     {
         public int PersonNumber{ get; set; }
         public string Password { get; set; }
+        public int Status { get; set; }
     }
 }

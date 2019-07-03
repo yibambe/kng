@@ -26,8 +26,17 @@ namespace Service.Controllers
         public IHttpActionResult Login([FromBody] UsuarioDTO usuarioDTO)
         {
             Usuario tmpUsuario = Mapper.Map<Usuario>(usuarioDTO);
-            _usuario.GetById(tmpUsuario);
-            return Ok("test");
+            var result =  _usuario.GetById(tmpUsuario);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                UsuarioDTO tmpUsuarioDTO = Mapper.Map<UsuarioDTO>(result);
+                return Ok(tmpUsuarioDTO);
+            }
         }
         //public UsuarioDTO Login(UsuarioDTO usuarioDTO)
         //{

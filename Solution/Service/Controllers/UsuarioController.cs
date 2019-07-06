@@ -10,8 +10,10 @@ using Common.DTO;
 using Persistance.KRepository;
 using Persistance.DatabaseContext;
 using AutoMapper;
+using System.Web.Http.Cors;
 namespace Service.Controllers
 {
+    //[EnableCors(origins:"*",headers:"*",methods:"*")]
     public class UsuarioController : ApiController
     {
         private IUsuario _usuario;

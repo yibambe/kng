@@ -40,18 +40,26 @@ namespace Service.Controllers
                 return Ok(tmpUsuarioDTO);
             }
         }
-        //public UsuarioDTO Login(UsuarioDTO usuarioDTO)
-        //{
-        //    UsuarioDTO usuarioDTORequest = new UsuarioDTO()
-        //    {
-        //        PersonNumber = 1,
-        //        Password = "develop3r"
 
-        //    };
+        [HttpGet]
+        ///[ResponseType(typeof(UsuarioDTO))]
+        [Route("api/usuario/login/get")]
+        public IHttpActionResult LoginGet([FromBody] UsuarioDTO usuarioDTO)
+        {
+            Usuario tmpUsuario = Mapper.Map<Usuario>(usuarioDTO);
+            var result = _usuario.GetById(tmpUsuario);
 
-        //  //   return Ok(usuarioDTORequest);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                UsuarioDTO tmpUsuarioDTO = Mapper.Map<UsuarioDTO>(result);
+                return Ok(tmpUsuarioDTO);
+            }
+        }
 
-        //}
         // GET: api/Usuario
         public IEnumerable<string> Get()
         {

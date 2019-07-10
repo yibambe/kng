@@ -18,7 +18,9 @@ namespace Persistance.KRepository
             {
                 using (KonexusModel context = new KonexusModel())
                 {
-                    usuarioResponse = context.Usuarios.Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault();
+                    // context.Usuarios.Include(fk=> Persona)
+                    usuarioResponse = context.Usuarios.Include("Persona").Where(x => x.Numero_persona == usuario.Numero_persona && x.Contraseña == usuario.Contraseña).FirstOrDefault();
+                    // Console.WriteLine(tmpusuarioResponse);
                 }
             }
             catch (Exception ex)

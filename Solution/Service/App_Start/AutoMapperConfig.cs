@@ -15,9 +15,14 @@ namespace Service
             Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<UsuarioDTO, Usuario>()
-                .ForMember(y => y.Numero_persona, x=> x.MapFrom( src => src.PersonNumber))
-                .ForMember(y=> y.Contraseña , x=> x.MapFrom( src => src.Password))
-                .ForMember(y => y.Estatus, x => x.MapFrom(src => src.Status)).ReverseMap();
+                .ForMember(y => y.Numero_persona, x => x.MapFrom(src => src.PersonNumber))
+                .ForMember(y => y.Contraseña, x => x.MapFrom(src => src.Password))
+                .ForMember(y => y.Estatus, x => x.MapFrom(src => src.Status))
+                .ForPath(y => y.Persona.Nombre_Completo, x => x.MapFrom(src => src.FullName))
+                .ForPath(y => y.Persona.Numero_Empresa, x => x.MapFrom(src => src.CompanyNumber))
+                .ForPath(y => y.Persona.correo_electronico, x => x.MapFrom(src => src.Email))
+                .ReverseMap();
+                
             });
 
             //Mapper.Initialize((config) =>

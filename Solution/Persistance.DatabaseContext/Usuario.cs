@@ -33,5 +33,7 @@ namespace Persistance.DatabaseContext
         public int? Clas_Sucursal { get; set; }
 
         public int? Familia { get; set; }
+
+        public virtual Persona Persona { get; set; }
     }
 }

@@ -20,6 +20,7 @@ namespace Service
                 .ForMember(y => y.Estatus, x => x.MapFrom(src => src.Status))
                 .ForPath(y => y.Persona.Nombre_Completo, x => x.MapFrom(src => src.FullName))
                 .ForPath(y => y.Persona.Numero_Empresa, x => x.MapFrom(src => src.CompanyNumber))
+                .ForPath(y => y.Persona.Nombre_Corto, x => x.MapFrom(src => src.ShortName))
                 .ForPath(y => y.Persona.correo_electronico, x => x.MapFrom(src => src.Email))
                 .ReverseMap();
                 

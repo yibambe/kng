@@ -14,6 +14,7 @@ namespace Common.DTO
         public string FullName { get; set; }
         public int CompanyNumber { get; set; }
         public string Email { get; set; }
+        public string ShortName { get; set; }
 
     }
 }
